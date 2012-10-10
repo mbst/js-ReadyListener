@@ -7,20 +7,20 @@ jsFiddle: http://jsfiddle.net/DdGKT/
 How
 ==
 
-  // How many things do we need to wait for?
-  var expect = 5;
+    // How many things do we need to wait for?
+    var expect = 5;
 
-  // Set up the listener
-  var rl = new ReadyListener(expect, function(){
-    // Function when we have all
-    document.write('Done!');
-  });
+    // Set up the listener
+    var rl = new ReadyListener(expect, function(){
+      // Function when we have all
+      document.write('Done!');
+    });
 
-  for (var i = 0, ii = 5; i<ii; i++) {
-    document.write(i + ', ');
-    // Add the item
-    rl.add(i);
-  }
+    for (var i = 0, ii = 5; i<ii; i++) {
+      document.write(i + ', ');
+      // Add the item
+      rl.add(i);
+    }
 
 Licence (MIT)
 ==
