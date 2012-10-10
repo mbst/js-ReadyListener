@@ -11,11 +11,11 @@ ReadyListener.prototype.add = function(name){
 };
 
 ReadyListener.prototype.haveAllCheck = function(){
-	if(this.haveItems === this.itemLength){
+	if (this.haveItems === this.itemLength) {
 		this.fn();
 	}
 };
 
-if(module && module.exports){
+if (module && module.exports) {
 	module.exports = ReadyListener;
 }
